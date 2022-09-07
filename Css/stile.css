@@ -1,0 +1,46 @@
+body{
+    /*background-color: red;*/
+}
+.abs{
+    position:absolute;/* proprieta position:absolute;*/
+}
+img{
+    max-width:100%;
+}
+
+.container{
+    width:300px;
+
+    
+    background-color: aqua;
+}
+
+.card{
+    position:relative;
+}
+
+.cuore{
+    top:15px;
+    right:0;
+    background-color: red;
+    padding:0.5em;
+    z-index: 1;
+}
+.sconto{
+    bottom:40px;
+    background-color: green;
+    z-index: 1;;
+}
+.info{
+    bottom:40px;
+    left:38px;
+    background-color: red;
+    z-index: 1;  
+}
+.scoperta{
+    top:0;
+    left:0;
+}
+.card:hover .scoperta{
+    display:none;
+}
