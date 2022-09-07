@@ -1,46 +1,126 @@
-body{
-    /*background-color: red;*/
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-.abs{
-    position:absolute;/* proprieta position:absolute;*/
-}
-img{
-    max-width:100%;
-}
-
-.container{
-    width:300px;
-
-    
-    background-color: aqua;
-}
-
-.card{
+.rel{
     position:relative;
 }
+.abs{
+    position:absolute;
+}
+img{
+    max-width: 100%;
+}
+.flex-box{
+    display:flex;
+    justify-content: space-between;
+    
+}
 
+.mr{
+    margin-right:0.3rem;
+}
+
+
+
+.capo{
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+header{
+    background-color: rgba(255, 105, 0, 100%);
+    min-height:85px;  
+    line-height: 85px;
+    color:white;
+}
+header .container .col:nth-of-type(2){
+    width:50%;
+}
+header .container .col:nth-of-type(odd){
+    width:25%;
+}
+header .container .col:nth-of-type(2) img{
+    width:100%;
+    vertical-align: middle;
+}
+
+.inizio{
+    justify-content: flex-start;
+}
+.termine{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header.container div i {
+    vertical-align: middle;
+}
+.col.second .contenitore {
+    width:50%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+.container{
+    width:80%;
+    max-width:1000px;
+    margin:0 auto;
+    /*background-color: aqua; debug*/
+}
+
+.col{
+    width:30%;
+    
+    /*background-color: red;*/
+    /*min-height: 200px;*/
+    margin-bottom: 1.5rem;
+
+}
 .cuore{
-    top:15px;
+    padding:0.3em;
+    background-color: grey;
     right:0;
-    background-color: red;
-    padding:0.5em;
+    top:10px;
     z-index: 1;
 }
 .sconto{
-    bottom:40px;
-    background-color: green;
-    z-index: 1;;
+    bottom:15px;
+    left:0;
+    background-color: red;
+    z-index: 1;
 }
 .info{
-    bottom:40px;
+    bottom:15px;
+    background-color: green;
     left:38px;
-    background-color: red;
-    z-index: 1;  
+    z-index: 1;
 }
-.scoperta{
+.scambio{
     top:0;
     left:0;
 }
-.card:hover .scoperta{
+.card:hover .scambio{
     display:none;
+}
+.grassetto{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+figcaption span:first-child{
+    color:red;
+}
+.col:last-of-type .info{
+    left:0;
 }
