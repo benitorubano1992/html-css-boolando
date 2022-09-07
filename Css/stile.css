@@ -38,6 +38,8 @@ header{
     min-height:85px;  
     line-height: 85px;
     color:white;
+    position: sticky;
+    
 }
 header .container .col:nth-of-type(2){
     width:50%;
@@ -72,7 +74,9 @@ header.container div i {
 
 
 
-
+section.container{
+    margin-top:1.5rem;
+}
 .container{
     width:80%;
     max-width:1000px;
@@ -123,4 +127,30 @@ figcaption span:first-child{
 }
 .col:last-of-type .info{
     left:0;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    min-height:100px;
+    display: flex;
+    align-items: center;
+}
+
+footer .col{
+    width:35%;
+
+}
+footer ul{
+    font-size:0.7rem;
+}
+footer span{
+    display: inline-block;
+}
+
+footer h3, footer span{
+    margin-bottom:0.5rem;
+}
+footer .col:nth-of-type(2){
+    text-align: right;
 }
